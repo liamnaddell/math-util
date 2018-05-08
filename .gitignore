@@ -1,0 +1,4 @@
+mtools-haskell/.cabal-sandbox
+mtools-haskell/cabal.sandbox.config
+mtools-rust/target
+mtools-rust/**/*.rs.bk

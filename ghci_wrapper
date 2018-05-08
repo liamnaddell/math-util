@@ -1,0 +1,11 @@
+#!/bin/sh
+
+
+if [ $# -eq 1 ]; then
+  echo "$1" | ghci | sed 's/Prelude>//g' | tail -n 2 | head -n1
+elif [ $# -gt 1 ]; then
+  echo "Too many args"
+else
+  cat | ghci | sed 's/Prelude>//g' | tail -n 2 | head -n1
+fi
+
